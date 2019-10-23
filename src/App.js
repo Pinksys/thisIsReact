@@ -6,13 +6,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <image>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Click the image to change the animal
         </p>
-        <button onClick={this.onClick}>
-        Click me!
-        </button>
+        <MyImage />
       </header>
     </div>
   );
