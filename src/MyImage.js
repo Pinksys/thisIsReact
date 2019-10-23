@@ -4,7 +4,8 @@ export class MyImage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.updateImate = this.updateImage.bind(this);
+    this.updateImage = this.updateImage.bind(this);
+    this.props = {currentImage: 'cat.png'};
 
   }
 
