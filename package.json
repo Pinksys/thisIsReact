@@ -2,7 +2,7 @@
   "name": "reeeact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pinksys.github.io/thisIsReact"
+  "homepage": "http://pinksys.github.io/thisIsReact",
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -14,7 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

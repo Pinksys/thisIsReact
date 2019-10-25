@@ -1,6 +1,8 @@
 import React from 'react';
 
-export class MyImage extends React.Component {
+const theImages = {cat: 'cat.png', dog: 'dog.png', pizza: 'pizza.png'};
+
+export default class MyImage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -9,20 +11,17 @@ export class MyImage extends React.Component {
 
   }
 
-
-  const images = {cat: 'cat.png', dog: 'dog.png', pizza: 'pizza.png'};
-
   updateImage() {
     const num = Math.floor(Math.random() * 3);
 
     if (num == 0) {
-      this.currentImage = cat;
+      this.currentImage = theImages.cat;
     }
     if (num == 1) {
-      this.currentImage = dog;
+      this.currentImage = theImages.dog;
     }
     if (num == 2) {
-      this.currentImage = pizza;
+      this.currentImage = theImages.pizza;
     }
   }
 
@@ -30,6 +29,6 @@ export class MyImage extends React.Component {
 
 
   render() {
-    return <img src={this.currentImage} alt="cute" onClick={this.updateImage}>;
+    return (<img src={this.props.currentImage} alt="cute" onClick={this.updateImage} />);
   }
 }
