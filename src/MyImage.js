@@ -1,6 +1,6 @@
 import React from 'react';
 
-const theImages = {cat: 'cat.png', dog: 'dog.png', pizza: 'pizza.png'};
+const theImages = {cat: './cat.png', dog: './dog.png', pizza: './pizza.png'};
 
 export default class MyImage extends React.Component {
 
@@ -24,9 +24,6 @@ export default class MyImage extends React.Component {
       this.currentImage = theImages.pizza;
     }
   }
-
-
-
 
   render() {
     return (<img src={this.props.currentImage} alt="cute" onClick={this.updateImage} />);
